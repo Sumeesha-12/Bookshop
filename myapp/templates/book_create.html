@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+{%block body_block%}
+<div class="container">
+    <h2 class="mt-4" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>Add New Book!!!</strong></h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+
+        <button type="submit" class="btn btn-outline-dark form-control">Add</button>
+    </form>
+</div>
+{%endblock%}
