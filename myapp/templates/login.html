@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
     <style>
       .bg{
-        background-color: #A9C9FF;
-background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        background-color:#B5C0D0;
+background-image: linear-gradient(180deg, #F1FADA 0%, #2D9596 100%);
 
 height: 100vh;
 }
@@ -56,7 +56,7 @@ height: 100vh;
         <form action="" method="post" class="border shadow-lg  rounded p-5">
           <h2 class="text-center"
             style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><strong>Login
-              Form!!!</strong></h2>
+              Form</strong></h2>
           {%csrf_token%}
           {{form.as_p}}
           <button type="submit" class="form-control btn btn-outline-secondary">Login</button>
